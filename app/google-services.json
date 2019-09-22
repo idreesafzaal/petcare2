@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "165512005358",
+    "firebase_url": "https://petcare2-83761.firebaseio.com",
+    "project_id": "petcare2-83761",
+    "storage_bucket": "petcare2-83761.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165512005358:android:7b3415d47ed4c24d",
+        "android_client_info": {
+          "package_name": "petcare.idreesafzaal.petcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165512005358-fa8qgh1t7trq43dsp0l58ptto5ddbcgb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "petcare.idreesafzaal.petcare",
+            "certificate_hash": "c76f0e1789791cec66cf204ea727b89daef1dd4d"
+          }
+        },
+        {
+          "client_id": "165512005358-j3hhbg6309duc9rviosfttsi47o7blf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "petcare.idreesafzaal.petcare",
+            "certificate_hash": "c4a69e4f2c0cd855b672203674e8168f6972a989"
+          }
+        },
+        {
+          "client_id": "165512005358-kku6gupl9hijc7ih5t233q3uojob4354.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyUE8vBiHY-8pTLimaoRVvRIVdQAyPqQ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165512005358-kku6gupl9hijc7ih5t233q3uojob4354.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

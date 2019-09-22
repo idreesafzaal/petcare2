@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Pet Care</string>
+    <string name="nh">Home</string>
+    <string name="na">Account</string>
+    <string name="nc">Chat</string>
+    <string name="nn">Notification</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_home">home</string>
+    <string name="dateofbirth">Pet Date Of Birth</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="dismiss_label">DISMISS</string>
+    <string name="clear_label">Clear all</string>
+    <string name="title_activity_doctor_home">doctorHome</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="suggestions">suggestions</string>
+    <string name="appointments">appointments</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:padding="10dp"
+                        android:tint="@color/white"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circle"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/schedule"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:text="Pet schedule"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-medium"
+                        />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/linearlayout1"
+                    android:rotation="45"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/square"
+                    android:layout_centerHorizontal="true"/>
+
+
+                <Button
+                    android:id="@+id/playingBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Playing schedule"
+                    android:background="@drawable/border_shape"
+                    android:textColor="@color/textcolor" />
+                <Button
+                    android:id="@+id/walkingBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/playingBtn"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Walking schedule"
+                    android:background="@drawable/border_shape"
+                    android:textColor="@color/textcolor" />
+
+                <Button
+                    android:id="@+id/showerBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/walkingBtn"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Shower schedule"
+                    android:background="@drawable/border_shape"
+                    android:textColor="@color/textcolor" />
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

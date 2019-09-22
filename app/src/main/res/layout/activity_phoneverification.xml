@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phoneverification">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:padding="10dp"
+                        android:tint="@color/white"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circle"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_person_black_24dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:text="Verification"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-medium"
+                        />
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/linearlayout1"
+                    android:rotation="45"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/square"
+                    android:layout_centerHorizontal="true"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/relativelayout1"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imageView_userIcon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:tint="@color/white"
+                        android:src="@drawable/person"
+                        android:padding="8dp"
+                        android:background="@color/colorPrimary"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/sendcode"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Code Here"
+                        android:textSize="15sp"
+                        android:paddingLeft="20dp"
+                        android:inputType="number"
+                        android:layout_toRightOf="@+id/imageView_userIcon"
+                        android:background="@color/editTextBackground"
+                        android:layout_alignBottom="@+id/imageView_userIcon"
+                        android:layout_alignParentTop="true"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressbar"
+                        android:layout_below="@+id/sendcode"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+
+
+
+                <Button
+                    android:layout_below="@+id/relativelayout1"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:text="Send Verfiy Code"
+                    android:id="@+id/vercodeBtn"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

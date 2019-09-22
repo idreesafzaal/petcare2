@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/backgroundapp"
+    android:layout_height="match_parent"
+    tools:context=".messages">
+<include layout="@layout/toolbar" android:id="@+id/meassge_app_bar"></include>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/sendchatview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Enter message"
+            android:padding="10dp"
+            android:textAlignment="center" />
+<Button
+    android:layout_width="46dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/sendbtn"
+       android:layout_marginLeft="15dp"
+    android:background="@drawable/sendmessageicon"
+    android:padding="10dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_width="match_parent"
+        android:layout_height="463dp"
+        android:id="@+id/messagerecycleview"
+        android:layout_above="@+id/linearlayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/meassge_app_bar">
+
+    </android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="110dp"
+        android:layout_height="463dp"
+android:visibility="gone"
+        android:id="@+id/recievemessage"
+        android:layout_above="@+id/linearlayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/meassge_app_bar">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:background="@color/colorAccent"
+    tools:context="petcare.idreesafzaal.petcare.docapp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp"
+            android:src="@drawable/malik"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Muhammad Shawal"
+            android:textColorHint="#000000"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:layout_marginTop="50dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#f9d7db" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MBBS(UK)"
+            android:textColorHint="#000000"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:layout_marginTop="30dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:background="#f9d7db" />
+        <RatingBar
+            android:theme="@style/AppTheme"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="center"
+            android:id="@+id/rating_bar"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating here"
+            android:textColorHint="#000000"
+            android:id="@+id/txt"
+            android:textAlignment="center"
+            android:textSize="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:text="REQUEST FOR APPOINTMENT"
+            android:onClick="request"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

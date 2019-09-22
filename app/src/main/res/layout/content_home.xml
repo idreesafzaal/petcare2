@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ic"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="petcare.idreesafzaal.petcare.home"
+    tools:showIn="@layout/app_bar_home">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    android:layout_above="@+id/bot"
+    >
+
+</FrameLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pageview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dots"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/pageview"
+        android:layout_marginEnd="36dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+<android.support.v7.widget.CardView
+   android:id="@+id/cardview"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    android:background="@drawable/border_shape"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    android:layout_below="@+id/dots"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+       android:background="@drawable/border_shape"
+        android:id="@+id/marqueeText"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:padding="10dp"
+
+        android:layout_gravity="center"
+        android:text="A dog is the only thing on earth that loves you more than he loves himself"
+        android:textColor="@color/textcolor"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.CardView>
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/nav_items"
+        android:id="@+id/bot"
+        ></android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

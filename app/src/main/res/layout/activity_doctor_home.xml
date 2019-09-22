@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctorHome">
+
+    <include
+        android:id="@+id/doctorhometoolbar"
+        layout="@layout/toolbar"
+        android:layout_height="wrap_content"></include>
+
+    <FrameLayout
+        android:id="@+id/docfragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="438dp"
+        android:layout_above="@+id/navigation"
+        android:layout_marginBottom="19dp"
+        android:layout_marginTop="45dp">
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pageview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="108dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dots"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/pageview"
+        android:layout_marginEnd="36dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>

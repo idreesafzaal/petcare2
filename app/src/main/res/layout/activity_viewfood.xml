@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context="petcare.idreesafzaal.petcare.viewfood">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+<TextView
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#fff"
+
+    android:text="breakfast:"
+    android:textSize="20dp"
+    />
+    <ListView
+        android:scrollbars="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b"
+        android:textAlignment="center"
+        ></ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="lunch:"
+        android:textColor="#fff"
+
+        android:textSize="20dp"
+        />
+    <ListView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/l"></ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+
+        android:text="dinner:"
+        android:textSize="20dp"
+        />
+    <ListView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/d"></ListView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        android:id="@+id/hm"/>
+    <item
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Profile"
+        android:id="@+id/cc"/>
+    <item
+        android:icon="@drawable/pschedul"
+        android:title="Pet schedule"
+        android:id="@+id/chat"/>
+    <item
+        android:icon="@drawable/petwalk"
+        android:title="Pet schedule info"
+        android:id="@+id/not"/>
+</menu>

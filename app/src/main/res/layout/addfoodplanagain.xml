@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/meassge_app_bar"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/circle"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_pets_black_24dp"
+                        android:tint="@color/white"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Your Pet Food Plan"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/linearlayout1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-10dp"
+                    android:rotation="45"
+                    android:src="@drawable/square" />
+
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp">
+
+                    <Spinner
+                        android:id="@+id/addfoodday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"></Spinner>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout001"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="211dp">
+
+                    <Button
+                        android:id="@+id/breakfastcal"
+                        android:layout_width="wrap_content"
+
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+
+                        android:layout_alignParentTop="true"
+
+                        android:background="@color/tranparent"
+                       android:layout_marginLeft="20dp"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/lunchcal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_alignParentTop="true"
+
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/tranparent"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/dinnercal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="22dp"
+
+                        android:background="@color/tranparent"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativelayout001"
+
+                    android:layout_marginTop="30dp">
+
+                    <Button
+                        android:id="@+id/addbreakfastTimebtn"
+                        android:layout_width="127dp"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimary"
+
+                        android:src="@drawable/person"
+                        android:text="breakfast Time"
+                        android:textColor="@color/white"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/breakfast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/addbreakfastTimebtn"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/addbreakfastTimebtn"
+                        android:background="@color/editTextBackground"
+                        android:hint="Select Breakfast?"
+                        android:paddingLeft="20dp"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout2"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativelayout1"
+
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/addlunchTimebtn"
+                        android:layout_width="127dp"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimary"
+
+                        android:text=" Lunch Time"
+                        android:textColor="@color/white"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/lunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/addlunchTimebtn"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/addlunchTimebtn"
+                        android:background="@color/editTextBackground"
+                        android:hint="Select Lunch?"
+                        android:paddingLeft="20dp"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout3"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativelayout2"
+
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/adddinnerTimebtn"
+                        android:layout_width="127dp"
+                        android:layout_height="40dp"
+                        android:background="@color/colorPrimary"
+
+                        android:text="Dinner Time"
+                        android:textColor="@color/white"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/dinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/adddinnerTimebtn"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/adddinnerTimebtn"
+                        android:background="@color/editTextBackground"
+                        android:hint="Select Dinner?"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/addfoodplanBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativelayout3"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Make diet plan"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
